@@ -1,4 +1,4 @@
-<%  if !@post = nil %>
+<%  if !@post.nil? %>
   <% @posts.each do |post| %>
     <h2><%= post.title %></h2>
     <div><%= truncate(post.body, :length => 35) %></div>

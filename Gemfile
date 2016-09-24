@@ -40,6 +40,7 @@ group :development do
   gem 'web-console'
   gem 'spring'
   gem 'listen'
+  gem 'devise'
 end
 
 group :development do

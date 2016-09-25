@@ -8,9 +8,11 @@
   font-size: 14px;
 
 }
-
+#main_links {
+  float: right;
+}
 #main {
-  text-align: center;
+  text-align: left;
   font-family: Verdana,Geneva,sans-serif;
 }
 #form {
@@ -44,7 +46,7 @@
 body {
   background-color: #538cc6;
   color: black;
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   font-family: Verdana,Geneva,sans-serif;
 

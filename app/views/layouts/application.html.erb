@@ -10,9 +10,11 @@
   </h1>
 
   <div id="body_links" >
+    <div id="main_links" >
       <%= link_to "Sign Up", new_user_registration_path %>
       <%= link_to "Log In", new_user_session_path %>
       <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+    </div>  
       <%= link_to "Home", root_path %>
       <%= link_to "New Post", new_post_path %>
     </div>
@@ -23,7 +25,7 @@
     <p class="alert"><%= alert %></p>
 
     <hr>
-    <%= yield %>
+<%= yield %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

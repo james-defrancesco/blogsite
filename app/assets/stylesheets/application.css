@@ -1,18 +1,24 @@
 #title {
   color: #DAA520;
-  font-size: 46px;
+  font-size: 48px;
   font-family: Verdana,Geneva,sans-serif;
+  text-align: center;
+
 }
 
 #body_links {
   font-size: 14px;
 
 }
+#page_links {
+  float: left;
+}
 #main_links {
   float: right;
+
 }
 #main {
-  text-align: left;
+  text-align: center;
   font-family: Verdana,Geneva,sans-serif;
 }
 #form {
@@ -46,7 +52,7 @@
 body {
   background-color: #538cc6;
   color: black;
-  text-align: left;
+  text-align: center;
   font-size: 18px;
   font-family: Verdana,Geneva,sans-serif;
 

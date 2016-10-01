@@ -7,23 +7,25 @@
   </head>
   <div id="body_links" >
     <div id="main_links" >
-      <% if current_user %>
-        <%= current_user.email%>
-      <% end %>
-      <%= link_to "Sign Up", new_user_registration_path %>
-      <%= link_to "Log In", new_user_session_path %>
-      <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+
+    <% if user_signed_in? %>
+      <%= link_to "Log Out", destroy_user_session_path, :method => :delete %>
+    <% end %>
+
     </div>
     <div id="page_links" >
       <%= link_to "Home", root_path %>
       <%= link_to "New Post", new_post_path %>
     </div>
     </div>
-  <h1 id="title">
-    blogg.Y
-  </h1>
-
-
+    <br>
+    <h1 id="title">blogg.Y</h1>
+    <div id="welcome" >
+      <% if current_user %>
+        <%= "Welcome," %>
+        <%= current_user.email %>
+      <% end %>
+    </div>
 <body>
 
 

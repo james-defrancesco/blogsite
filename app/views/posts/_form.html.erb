@@ -2,11 +2,11 @@
 <%= form_for @post do |f| %>
   <div id="post_title">
   <%= f.label :title %><br>
-  <%= f.text_field :title %><br>
+  <%= f.text_field :title, required: true %><br>
 </div>
   <br>
   <%= f.label :body %><br>
-  <%= f.text_area :body %><br>
+  <%= f.text_area :body, required: true %><br>
   <br>
   <%= f.submit %>
 <% end %>

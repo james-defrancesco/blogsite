@@ -2,13 +2,12 @@
   color: #DAA520;
   font-size: 48px;
   font-family: Verdana,Geneva,sans-serif;
-  text-align: center;
-
 }
-
+#welcome {
+  font-size: 14px;
+}
 #body_links {
   font-size: 14px;
-
 }
 #page_links {
   float: left;
@@ -22,13 +21,12 @@
   font-family: Verdana,Geneva,sans-serif;
 }
 #form {
-  background-color: #345eba;
+  background-color: #708090;
   max-width: 100vh;
   max-height: 100vh;
   margin: 0 auto;
   padding: 10px;
   font-family: Verdana,Geneva,sans-serif;
-
 }
 #post_body{
   padding: 5px;
@@ -41,7 +39,6 @@
   color: black;
   font-size: 18px;
   font-family: Verdana,Geneva,sans-serif;
-
 }
 #post_title {
   color: black;
@@ -50,16 +47,19 @@
   font-family: Verdana,Geneva,sans-serif;
 }
 body {
-  background-color: #538cc6;
+  background-color: #708090;
   color: black;
   text-align: center;
   font-size: 18px;
   font-family: Verdana,Geneva,sans-serif;
-
 }
-
 h2 {
-  color: black;
+  color: #DAA520;
+  font-family: Verdana,Geneva,sans-serif;
+}
+h1 {
+  text-align: center;
+  color: #DAA520;
   font-family: Verdana,Geneva,sans-serif;
 }
 hr {

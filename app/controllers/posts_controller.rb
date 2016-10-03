@@ -36,11 +36,16 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    post = find_post
+    unless current_user.id == post.user_id
+      flash[:notice] = "You don't have access to delete this"
+      redirect_to root_path
+      return
+    end
     @post.destroy
     redirect_to root_path
   end
 
-  private
   def find_post
     @post = Post.find(params[:id])
   end

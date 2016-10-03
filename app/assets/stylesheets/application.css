@@ -14,7 +14,10 @@
 }
 #main_links {
   float: right;
-
+}
+#user_email_display {
+  font-size: 14px;
+  color: #B8860B;
 }
 #main {
   text-align: center;

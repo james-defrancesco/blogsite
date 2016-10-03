@@ -45,6 +45,15 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def check_post_for_deletion
+    @post = Post.find params[:id]
+    unless current_user.id == @post.user_id
+      flash[:notice] = "You don't have access to delete this"
+      redirect_to root
+      return
+    end
+  end
+
   def post_params
     params.require(:post).permit(:title, :body)
   end
